@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap');
+
+.hero {
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-container {
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.hero-content {
+  animation: fadeInUp 1s ease-out;
+  position: relative;
+}
+
+.hero-image {
+  position: absolute;
+  right: -80px;
+  top: 0%;
+}
+
+.profile-image {
+  border-radius: 100%;
+  border: 2px solid var(--border-color);
+  box-shadow: 0 2px 8px var(--shadow-color);
+  transition: all 0.3s ease;
+  animation: float 8s ease-in-out infinite;
+}
+
+.profile-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 16px var(--shadow-color);
+}
+
+.hero-title {
+  font-family: 'Crimson Text', 'Playfair Display', 'Georgia', serif;
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  text-decoration: underline 5px var(--accent-color);
+}
+
+.hero-subtitle {
+  font-family: 'Source Sans Pro', 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  opacity: 0;
+  animation: fadeInUp 1s ease-out 0.3s forwards;
+}
+
+.hero-description {
+  font-family: 'Merriweather', 'Georgia', 'Times New Roman', serif;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: var(--text-secondary);
+  margin-bottom: 3rem;
+  line-height: 1.7;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 300;
+  opacity: 0;
+  animation: fadeInUp 1s ease-out 0.6s forwards;
+}
+
+.Name-Image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-cta {
+  display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 10px;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out 0.9s forwards;
+    position: relative;
+    z-index: 10;
+}
+
+.cta-button {
+  font-family: 'Source Sans Pro', 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: rgb(240, 235, 226);
+  color: #495057;
+  /* color: var(--bg-primary); */
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 10;
+  pointer-events: auto;
+}
+
+.cta-button:hover {
+  background: white;
+  color: var(--text-primary);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px var(--shadow-color);
+}
+/* Animated Icons */
+.hero-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  opacity: 0;
+  animation: fadeInUp 1s ease-out 1.2s forwards;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  background: var(--bg-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  animation: float 3s ease-in-out infinite;
+  border: 1px solid var(--border-color);
+}
+
+.tech-icon:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.tech-icon:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.tech-icon:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+.tech-icon:hover {
+  transform: translateY(-2px);
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+  font-family: 'Source Sans Pro', 'Open Sans', 'Helvetica Neue', sans-serif;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-tertiary);
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  opacity: 0;
+  animation: fadeInUp 1s ease-out 1.5s forwards;
+}
+
+.scroll-arrow {
+  margin-top: 0.5rem;
+  animation: bounce 2s infinite;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Glowing Background Effect */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.02) 0%, transparent 70%);
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  animation: pulse 8s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 0.1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    padding: 1rem;
+    min-height: 90vh;
+  }
+  
+  .hero-cta {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta-button {
+    width: 100%;
+    max-width: 280px;
+  }
+  
+  .hero-icons {
+    gap: 1rem;
+  }
+  
+  .tech-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+  
+  /* Mobile: Move image below title */
+  .hero-image {
+    position: static;
+    transform: none;
+    margin: 2rem auto;
+    display: block;
+  }
+  
+  .profile-image {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-icons {
+    flex-wrap: wrap;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Large screens: Adjust image position */
+@media (min-width: 1200px) {
+  .hero-image {
+    right: -150px;
+  }
+  
+  .profile-image {
+    width: 250px;
+    height: 250px;
+  }
+}
