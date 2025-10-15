@@ -1,0 +1,15 @@
+[
+    {
+        "name": "Soolra",
+        "description": "E-commerce website for an iPhone-Gameboy case brand.",
+        "img": "./galleryScreenShots/Soolra1.png",
+        "alt": "Image 1",
+        "url": "https://shop.soolra.com/products/soolra"
+    },
+    {
+        "name": "Movify",
+        "description": "A movie web application that allows employees to search for movies, view details, and manage a list of favorite movies.",
+        "img": "./galleryScreenShots/movify1.png",
+        "alt": "Image 2"
+    }
+]

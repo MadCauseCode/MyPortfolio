@@ -1,0 +1,9 @@
+.mywork-container {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 100%; 
+}
