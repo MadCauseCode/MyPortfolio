@@ -1,15 +1,49 @@
 [
     {
-        "name": "Soolra",
-        "description": "E-commerce website for an iPhone-Gameboy case brand.",
-        "img": "./galleryScreenShots/Soolra1.png",
-        "alt": "Image 1",
-        "url": "https://shop.soolra.com/products/soolra"
+        "name": "Glam42",
+        "category": "Freelance Work",
+        "description": "An active shopify e-commerce website for perfumes, driving over 500k NIS in overall sales, featuring custom Liquid templates, JavaScript enhancements, and responsive design to optimize user experience and conversion rates. Built a fully custom API integration to sync products and inventory with an external ERP system, syncing orders in real-time using webhooks.",
+        "img": "/galleryScreenShots/Glam42_1.webp",
+        "alt": "Glam42",
+        "url": "https://glam42.co.il/",
+        "TechStack": ["JavaScript", "Liquid", "Shopify"],
+        "morePhotos": [
+            "/galleryScreenShots/Glam42_2.webp",
+            "/galleryScreenShots/Glam42_3.webp"
+        ]
     },
     {
         "name": "Movify",
-        "description": "A movie web application that allows employees to search for movies, view details, and manage a list of favorite movies.",
-        "img": "./galleryScreenShots/movify1.png",
-        "alt": "Image 2"
+        "category": "Personal Project",
+        "description": "A comprehensive full-stack cinema management system built with React, Node.js, and MongoDB. Features secure JWT authentication, complete CRUD operations for movies and members, subscription tracking, and an intuitive admin dashboard for managing cinema operations and member subscriptions.",
+        "img": "/galleryScreenShots/movify1.webp",
+        "alt": "Movify",
+        "github": "https://github.com/MadCauseCode/Movify",
+        "TechStack": ["JavaScript", "React", "Node.js", "Express", "MongoDB"],
+        "morePhotos": [
+            "/galleryScreenShots/movify2.webp",
+            "/galleryScreenShots/movify3.webp",
+            "/galleryScreenShots/movify4.webp",
+            "/galleryScreenShots/movify5.webp"
+        ]
+    },
+    {
+        "name": "Soolra",
+        "category": "Freelance Work",
+        "description": "Contributed to the development of this Shopify e-commerce platform, implementing custom Liquid templates, JavaScript functionality, and responsive design components for the iPhone-Gameboy case brand's online store.",
+        "img": "/galleryScreenShots/Soolra1.webp",
+        "alt": "Soolra",
+        "url": "https://shop.soolra.com/products/soolra",
+        "TechStack": ["JavaScript", "Liquid", "Shopify"]
+    },
+    {
+        "name": "Groover",
+        "category": "Personal Project",
+        "description": "A modern web-based drum sequencer built with React and a publicly available Midi-Writer library, featuring interactive beat programming, real-time audio playback, BPM control, and MIDI export functionality. Includes professional drum samples, responsive grid-based pattern creation, and seamless loop playback for music production workflows. Deployed and hosted on Vercel for optimal performance and global accessibility.",
+        "img": "/galleryScreenShots/Groover1.webp",
+        "alt": "Groover",
+        "TechStack": ["JavaScript", "React", "MidiWriter", "Vercel"],
+        "url": "https://beatmaker-six.vercel.app/",
+        "github": "https://github.com/MadCauseCode/Groover"
     }
 ]
